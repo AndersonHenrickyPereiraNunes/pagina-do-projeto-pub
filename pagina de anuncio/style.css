@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 50px 50px;
+  
+}
+.ad-data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.ad-data input{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 30px;
+
+}
+.ad-number {
+    display: flex;
+    gap: 30px; ;
+    
+}
+.ad-number .number-house{
+    width: 50px;
+}
+.input-ad{
+    width: 300px;
+}
+.ad-number .indireitar{
+    display: flex;
+    flex-direction: column;
+}
+.ad-text{
+    display: flex;
+    gap: 30px;
+}
+.ad-text .indireitar{
+    
+    display: flex;
+    flex-direction: column;
+}
+.upload{
+    color: transparent;
+}
+.box-upload{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0px 0px 0px;
+}
+section{
+    display: flex;
+    align-items: center;
+   
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.submit{
+    width: 250px ;
+    height: 32px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+
+}
+.submit:hover{
+    
+    color: black;
+}
+.upload-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 125px; 
+    height: 100px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    cursor: pointer; 
+    overflow: hidden; 
+  }
+  
+  .upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #333;
+  }
+  
+  .upload-label span {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+ 
+  .fas.fa-upload {
+    font-size: 24px;
+  }
+  #upload-input {
+    display: none;
+  }
+  
