@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    height: 100%;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -15,15 +18,13 @@ header{
         font-style: normal;
 
 }
-
 main{
     display: flex;
     justify-content: space-around;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 70px 80px;
-    gap: 20px;
+    padding: 80px;
     /* margin: 100px ; */
   
 }
@@ -32,88 +33,91 @@ main h2{
     margin-bottom:30px ;
     
 }
-.name-of-ad{
-    width: 415px;
-    height: 40px;
-    border-radius: 5px;
-    border: solid 1px #ccc;
-}
-.name-of-ad-div ::placeholder{
-    padding: 12px;
-}
-
-.content-1{
+.ad-data {
     display: flex;
+    flex-direction: column;
+   
     gap: 15px;
+
+}
+.ad-data input{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 30px;
+
+}
+.ad-number {
+    display: flex;
+    gap: 30px; ;
     
 }
-.content-1 ::placeholder{
-    padding:12px;
+.ad-number .number-house{
+    width: 50px;
+}
+.input-ad{
+    width: 300px;
+}
+.ad-number .indireitar{
+    display: flex;
+    flex-direction: column;
     
 }
-.content-2{
-    display: flex;
-    gap: 15px;
-}
-.content-2 ::placeholder{
+.indireitar ::placeholder{
     padding: 12px;
 }
-.content-3{
+.ad-text{
     display: flex;
-    gap: 15px;
+    gap: 30px;
 }
-.content-3 ::placeholder{
-    padding: 12px;
-}
-
-.little{
-    width: 80px;
-    border-radius: 5px;
-    border: solid 1px #ccc;
-}
-.style-input{
-    border: solid 1px #ccc;
-    width: 200px;
-    height: 40px;
-    border-radius: 5px;
-    transition: border 0.2s ease-in-out;
-}
-input:hover {
+.ad-text .indireitar{
     
-    border: 1px solid #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
-
+.city{
+}
+.upload{
+    color: transparent;
+}
+.box-upload{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0px 0px 0px;
+}
+section{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+}
 .submit{
     display: flex;
     justify-content: flex-start;
-    
+ 
     padding: 14px 32px;
     background-color: #033aaf;
     color: white;
     border-radius: 5px;
     border: none;
-    cursor: pointer;
 
 }
-
-.box-upload{
-    display: flex;
-   
-    gap: 15px;
+.submit:hover{
+    
+    color: black;
 }
 .upload-container {
     display: flex;
     align-items: center; 
     justify-content: center; 
-    width: 105px; 
-    height: 90px; 
+    width: 125px; 
+    height: 100px; 
     border: 1px solid #ccc;
     border-radius: 5px; 
     cursor: pointer; 
     overflow: hidden; 
-  }
-  .upload-container:hover{
-    border: 1px solid #666;
   }
   
   .upload-label {
@@ -125,7 +129,6 @@ input:hover {
     height: 100%;
     text-align: center;
     color: #333;
-    cursor: pointer;
   }
   
   .upload-label span {
@@ -139,9 +142,6 @@ input:hover {
   }
   #upload-input {
     display: none;
-  }
-  i{
-    color: #333;
   }
   footer{
     display: flex;
@@ -162,4 +162,4 @@ input:hover {
     text-decoration: underline;
     
 }
-
+  
