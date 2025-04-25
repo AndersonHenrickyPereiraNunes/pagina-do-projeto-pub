@@ -8,16 +8,20 @@ body{
         font-family: "Poppins", sans-serif;
         font-weight: 100;
         font-style: normal;
-      
-    
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 40px;
+        
+        
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 40px;
+        
+        
 
 }
-
+.oculto{
+    display: none;
+}
 main{
     display: flex;
     justify-content: space-around;
@@ -26,7 +30,8 @@ main{
     flex-direction: column;
     padding: 25px 80px;
     gap: 15px;
-    
+    margin-top: 80px;
+    margin-bottom: 80px;
   
 }
 main h2{
@@ -47,7 +52,6 @@ main h2{
 .content-1{
     display: flex;
     gap: 15px;
-    
 }
 .content-1 ::placeholder{
     padding:12px;
@@ -168,3 +172,20 @@ input:hover {
     
 }
 
+    /* adicionei novas coisas a partir daqui👇 */
+.content-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.little-2{
+    width:220px;
+    
+    border: solid 1px #ccc;
+    cursor: pointer;
+}
+
+.oculto{
+    display: none;
+}
