@@ -1,165 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-html{
-    height: 100%;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 32px 48px;
-    
-        font-family: "Poppins", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-
-}
-main{
-    display: flex;
-    justify-content: space-around;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 80px;
-    /* margin: 100px ; */
-  
-}
-main h2{
-    text-align: center;
-    margin-bottom:30px ;
-    
-}
-.ad-data {
-    display: flex;
-    flex-direction: column;
-   
-    gap: 15px;
-
-}
-.ad-data input{
+button {
+    /* background-color: #4CAF50; */
+    /* Cor de fundo */
+    border: solid 2px black;
+    /* Sem borda */
     border-radius: 5px;
-    border: 1px solid #ccc;
-    height: 30px;
-
-}
-.ad-number {
-    display: flex;
-    gap: 30px; ;
-    
-}
-.ad-number .number-house{
-    width: 50px;
-}
-.input-ad{
-    width: 300px;
-}
-.ad-number .indireitar{
-    display: flex;
-    flex-direction: column;
-    
-}
-.indireitar ::placeholder{
-    padding: 12px;
-}
-.ad-text{
-    display: flex;
-    gap: 30px;
-}
-.ad-text .indireitar{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-.city{
-}
-.upload{
-    color: transparent;
-}
-.box-upload{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin: 30px 0px 0px 0px;
-}
-section{
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    margin-left: 30px;
-}
-.submit{
-    display: flex;
-    justify-content: flex-start;
- 
-    padding: 14px 32px;
-    background-color: #033aaf;
-    color: white;
-    border-radius: 5px;
-    border: none;
-
-}
-.submit:hover{
-    
     color: black;
-}
-.upload-container {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    width: 125px; 
-    height: 100px; 
-    border: 1px solid #ccc;
-    border-radius: 5px; 
-    cursor: pointer; 
-    overflow: hidden; 
-  }
-  
-  .upload-label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    /* Cor do texto */
+    padding: 16px;
+    /* Espaçamento interno */
     text-align: center;
-    color: #333;
-  }
-  
-  .upload-label span {
+    /* Alinhamento do texto */
+    text-decoration: none;
+    /* Sem decoração de texto */
+    display: inline-block;
+    /* Exibição em linha */
     font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
- 
-  .fas.fa-upload {
-    font-size: 24px;
-  }
-  #upload-input {
-    display: none;
-  }
-  footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+    width: 120px;
+    height: 100px;
+    cursor: pointer;
 }
-.teste{
+.meio{
     display: flex;
     justify-content: center;
-    justify-content: space-between;
-    padding: 16px 30px;
-    
+    align-items: center;
+    gap: 10px;
 }
-.teste button{
-    background: none;
-    border: none;
-    padding: 10px;
-    text-decoration: underline;
-    
+.box-1{
+   
 }
-  
+.box-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
