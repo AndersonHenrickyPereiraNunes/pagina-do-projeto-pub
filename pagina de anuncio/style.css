@@ -4,20 +4,14 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
-    
-        font-family: "Poppins", sans-serif;
-        font-weight: 100;
-        font-style: normal;
-        
-        
-    }
-    header{
-        display: flex;
-        justify-content: space-between;
-        padding: 15px 40px;
-        
-        
-
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
 }
 .oculto{
     display: none;
@@ -104,6 +98,36 @@ input:hover {
     cursor: pointer;
 
 }
+.main-box-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.box_btns{
+    display: flex;
+    gap: 15px;
+}
+.box_btns_2{
+    display: flex;
+    gap: 15px;
+}
+.btn_recursos{
+    
+    border: solid 1px gray;
+    border-radius: 5px;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+}
+.btn_recursos:hover{
+    border: solid 1px black;
+}
 
 .box-upload{
     display: flex;
@@ -164,16 +188,22 @@ input:hover {
     padding: 10px 30px;
     
 }
-.teste button{
-    background: none;
+.btn_v{
     border: none;
-   
-    text-decoration: underline;
-    
+    outline: none;
+}
+.edit{
+    text-align: center;
+    background-color: #033aaf;
+    color: #ccc;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 100px;
 }
 
     /* adicionei novas coisas a partir daqui👇 */
-.content-5{
+.section_2{
     display: flex;
     flex-direction: column;
     align-items: center;

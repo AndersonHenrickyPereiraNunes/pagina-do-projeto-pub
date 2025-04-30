@@ -1,50 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="teste.css">
 </head>
+
 <body>
-   
+
     <header>
         <i>logo</i>
         <i>menu</i>
     </header>
     <main>
-        <div class="box-1" style="display: none;" >
-            <div class="">
-                <h1>Qual tipo de espaço vocé oferece?</h1>
-            </div>
-            <div class="meio">
-                <button>odontologia <i></i> </button>
-                <button>fisioterapia</button>
-              
-            </div>  
+        <section id="box-1">
+            <h1>Qual tipo de espaço vocé oferece?</h1>
+            <div class="box-1">
+            <button>odontologia <i></i> </button>
+            <button>fisioterapia <i></i></button>
         </div>
-    
-      <div class="box-2" style="display: ;">
-        <h1>informe o Endereço</h1>
-        <input type="text" placeholder="Endereço">
-        <input type="number" placeholder="Cep">
-        <input type="text" placeholder="estado">
-      </div>
-    <div>
-        <a href="">Avançar</a>
-    </div>
-    <div>
+    </section>
+        <div>
 
+
+        </div>
+
+
+      
+    <section>
+        <div class="box-2">
+            <h1>informe o Endereço</h1>
+            <input type="text" placeholder="Endereço">
+            <input type="number" placeholder="Cep">
+            <input type="text" placeholder="estado">
+        </div>
+    </section>
+    <section>       
+         <div class="box-3">
+            <h1>Qual o tipo de sala?</h1>
+            <button> radioterapia</button>
+            <button> Odontologia</button>
+            <button id="">fisioterapia</button>
+        </div>
+    </section>
+    <div>
+        
     </div>
     <div>
-
+        
     </div>
     <div>
-
+        
     </div>
-    <div>
+</main>
 
-    </div>
-   </main>
+       <div class="position">
+           <button id="voltar">voltar</button>
+           <button id="avancar">Avançar</button>
+
+       </div>
+    <script>
+        const btna = document.getElementById('avancar')
+        const btnv = document.getElementById('voltar')
+        const contador = ['box-1','box-2','box-3']
+
+        btna.onclick = function acao(){
+            
+            console.log('click krl');
+        }
+        btnv.onclick = function acaov(){
+            console.log("click buceta");
+        }
+    </script>
 </body>
+
 </html>

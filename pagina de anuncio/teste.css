@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 button {
     /* background-color: #4CAF50; */
     /* Cor de fundo */
@@ -19,18 +23,50 @@ button {
     height: 100px;
     cursor: pointer;
 }
-.meio{
+main{
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    padding: 25px 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+header{
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.ocultar{
+    display: none;
 }
 .box-1{
-   
+  display: flex;
+ 
+  align-items: center;
 }
 .box-2{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: none;
+}
+.box-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.position{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+   
 }

@@ -20,124 +20,156 @@
 
     </header>
     <main>
-          <h2>Cadastre seu espaço</h2>
-        <div class="name-of-ad-div" id="name-of-ad-div">
-            <input type="text" class="name-of-ad" name="escolheai" placeholder="Nome do seu anuncio" required>
-        </div>
-        <div class="content-1">
-            <input type="number" class="style-input" name="escolheai" placeholder="Cep" required>
-            <input type="text" class="style-input" name="escolheai" placeholder="Cidade" required>
-        </div>
-        </div>
-
-        <div class="content-2">
-            <input type="text" class="style-input" name="escolheai" placeholder="Bairro" required>
-            <input type="text" class="style-input" name="escolheai" placeholder="Rua" required>
-        </div>
-        </div>
-        <div class="content-3">
-            <input type="number" class="name-of-ad" name="escolheai" placeholder="Nº" required>
-
-        </div>
-        <div class="content-4">
-            <span>Horario de funcionamento</span>
-            <div class="content-input">
-                <input type="time" class="little" name="escolheai" required>
-                <span>até</span>
-                <input type="time" class="little" name="escolheai" required>
+        <section class="cadastro" id="cadastro">
+            <h2>Cadastre seu espaço</h2>
+            <div class="name-of-ad-div" id="name-of-ad-div">
+                <input type="text" class="name-of-ad" name="escolheai" placeholder="Nome do seu anuncio" required>
+            </div>
+            <div class="content-1">
+                <input type="number" class="style-input" name="escolheai" placeholder="Cep" required>
+                <input type="text" class="style-input" name="escolheai" placeholder="Cidade" required>
+            </div>
             </div>
 
-        </div>
+            <div class="content-2">
+                <input type="text" class="style-input" name="escolheai" placeholder="Bairro" required>
+                <input type="text" class="style-input" name="escolheai" placeholder="Rua" required>
+            </div>
+            </div>
+            <div class="content-3">
+                <input type="number" class="name-of-ad" name="escolheai" placeholder="Nº" required>
+
+            </div>
+        </section>
 
         <!-- adicionei novas coisas a partir daqui👇 -->
-        <div class="content-5">
-            <span>Que tipo de sala você oferece?</span>
+        <section class="section_2" id="cadastro_2">
+
+            <h2>Que tipo de sala você oferece?</h2>
             <select id="sala-clinica" name="sala-clinica" class="little-2">
                 <option value="fisioterapia">Fisioterapia</option>
                 <option value="odontologia">Odontologia</option>
                 <option value="psicologia">Psicologia</option>
             </select>
 
-        </div>
-        <div class="content-6">
-            <span>recursos basicos</span>
-            <select name="recursos" id="recursos">
-                <option value="wifi">Wi-fi</option>
-                <option value="estacionamento">Estacionamento</option>
-                <option value="ar-condicionado">Ar-condicionado</option>
-                <option value="recepcao">Recepção</option>
-            </select>
-        </div>
-        <div></div>
-        <div class="box-upload">
 
+        </section>
 
-            <div class="upload-container">
-                <input type="file" id="upload-input" accept="image/*">
-                <label for="upload-input" class="upload-label">
-                    <span>Upload de Foto</span>
-                    <i class="bi bi-upload"></i>
-                </label>
+        <section class="section_3" id="cadastro_3">
+            <h2>Recursos basicos</h2>
+            <div class="main-box-btns">
+                <div class="box_btns">
+                    <button id="" class="btn_recursos">Wi-fi</button>
+                    <button id="" class="btn_recursos">Estacionamento</button>
+                    <button id="" class="btn_recursos">Ar-condicionado</button>
+                </div>
+                <div class="box_btns_2">
+                    <button id="" class="btn_recursos">Recepção</button>
+                    <button id="" class="btn_recursos">Elevador</button>
+                    <button id="" class="btn_recursos">Banheiro</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_4" id="cadastro_4">
+            <div class="content-4">
+                <h2>Horario de funcionamento e valor por hora</h2>
+                <div class="content-input">
+                    <input type="time" class="little" name="escolheai" required>
+                    <span>até</span>
+                    <input type="time" class="little" name="escolheai" required>
+                </div>
 
             </div>
-            <div class="upload-container">
-                <input type="file" id="upload-input" accept="image/*">
-                <label for="upload-input" class="upload-label">
-                    <span>Upload de Foto</span>
-                    <i class="bi bi-upload"></i>
-                </label>
+        </section>
+        <section class="section_5" id="cadastro_5">
+            <div class="box-upload">
+
+                <h2>Anexe algumas fotos</h2>
+                <div class="upload-container">
+                    <input type="file" id="upload-input" accept="image/*">
+                    <label for="upload-input" class="upload-label">
+                        <span>Upload de Foto</span>
+                        <i class="bi bi-upload"></i>
+                    </label>
+
+                </div>
+                <div class="upload-container">
+                    <input type="file" id="upload-input" accept="image/*">
+                    <label for="upload-input" class="upload-label">
+                        <span>Upload de Foto</span>
+                        <i class="bi bi-upload"></i>
+                    </label>
+
+                </div>
+                <div class="upload-container">
+                    <input type="file" id="upload-input" accept="image/*">
+                    <label for="upload-input" class="upload-label">
+                        <span>Upload de Foto</span>
+                        <i class="bi bi-upload"></i>
+                    </label>
+
+                </div>
+                <div class="upload-container">
+                    <input type="file" id="upload-input" accept="image/*">
+                    <label for="upload-input" class="upload-label">
+                        <span>Upload de Foto</span>
+                        <i class="bi bi-upload"></i>
+                    </label>
+
+                </div>
 
             </div>
-            <div class="upload-container">
-                <input type="file" id="upload-input" accept="image/*">
-                <label for="upload-input" class="upload-label">
-                    <span>Upload de Foto</span>
-                    <i class="bi bi-upload"></i>
-                </label>
-
-            </div>
-            <div class="upload-container">
-                <input type="file" id="upload-input" accept="image/*">
-                <label for="upload-input" class="upload-label">
-                    <span>Upload de Foto</span>
-                    <i class="bi bi-upload"></i>
-                </label>
-
-            </div>
-
-        </div>
-
+        </section>
 
     </main>
-    <section>
-    </section>
+
     </div>
     <footer>
         <div class="teste">
-            <button id="voltar">Voltar</button>
+            <button id="voltar" class="btn_v">Voltar</button>
 
             <!-- <input type="submit" id="submit" name="submit" class="submit" value="Salvar anuncio"> -->
-            <button id="avancar">Avançar</button>
+            <button id="avancar" class="edit">Avançar</button>
         </div>
 
     </footer>
     <script>
-        const botao = document.getElementById('avancar');
-        const v_btn = document.getElementById('voltar');
-        const mostrar = document.getElementsByTagName('main');
-        const ocultar = document.getElementsByTagName('main');
+        const etapas = document.querySelectorAll('.cadastro, .section_2, .section_3, .section_4, .section_5, .content-6');
+        let etapaAtual = 0;
 
-        v_btn.onclick = function v() {
-            console.log('click krl');
-            mostrar[0].classList.remove('oculto');
+        function avancar() {
+            etapas[etapaAtual].style.display = 'none';
+            etapaAtual++;
+            if (etapaAtual >= etapas.length) {
+                etapaAtual = etapas.length - 1;
+            }
+            etapas[etapaAtual].style.display = 'block';
         }
-        botao.onclick = function ir() {
-            console.log('click');
-            ocultar[0].classList.add('oculto');
 
+        function voltar() {
+            etapas[etapaAtual].style.display = 'none';
+            etapaAtual--;
+            if (etapaAtual < 0) {
+                etapaAtual = 0;
+            }
+            etapas[etapaAtual].style.display = 'block';
+        }
+
+        document.getElementById('avancar').addEventListener('click', avancar);
+        document.getElementById('voltar').addEventListener('click', voltar);
+
+        
+        etapas[0].style.display = 'block';
+
+       
+        for (let i = 1; i < etapas.length; i++) {
+            etapas[i].style.display = 'none';
         }
 
     </script>
+
+
 </body>
 
 </html>
