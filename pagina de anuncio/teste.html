@@ -9,71 +9,133 @@
 </head>
 
 <body>
+    Entendi! Para permitir que vários botões sejam selecionados e que a borda de cada um fique preta quando clicados, você pode usar uma abordagem semelhante à anterior, mas sem remover a classe de seleção dos outros botões. Aqui está um exemplo atualizado que permite a seleção múltipla:
 
-    <header>
-        <i>logo</i>
-        <i>menu</i>
-    </header>
-    <main>
-        <section id="box-1">
-            <h1>Qual tipo de espaço vocé oferece?</h1>
-            <div class="box-1">
-            <button>odontologia <i></i> </button>
-            <button>fisioterapia <i></i></button>
-        </div>
-    </section>
-        <div>
-
-
-        </div>
-
-
-      
-    <section>
-        <div class="box-2">
-            <h1>informe o Endereço</h1>
-            <input type="text" placeholder="Endereço">
-            <input type="number" placeholder="Cep">
-            <input type="text" placeholder="estado">
-        </div>
-    </section>
-    <section>       
-         <div class="box-3">
-            <h1>Qual o tipo de sala?</h1>
-            <button> radioterapia</button>
-            <button> Odontologia</button>
-            <button id="">fisioterapia</button>
-        </div>
-    </section>
-    <div>
-        
-    </div>
-    <div>
-        
-    </div>
-    <div>
-        
-    </div>
-</main>
-
-       <div class="position">
-           <button id="voltar">voltar</button>
-           <button id="avancar">Avançar</button>
-
-       </div>
-    <script>
-        const btna = document.getElementById('avancar')
-        const btnv = document.getElementById('voltar')
-        const contador = ['box-1','box-2','box-3']
-
-        btna.onclick = function acao(){
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Botões Favoritos</title>
+        <style>
+            .favorites-container {
+                display: flex;
+                justify-content: space-between; /* Distribui os botões */
+                margin-top: 20px; /* Espaço superior */
+            }
+    
+            .button {
+                padding: 10px 20px;
+                background-color: #FF5A5F; /* Cor semelhante ao Airbnb */
+                color: white;
+                text-decoration: none;
+                border: 2px solid transparent; /* Borda padrão invisível */
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold; /* Texto em negrito */
+                transition: border-color 0.3s ease; /* Transição suave na cor da borda */
+            }
+             .buttonm {
+                padding: 10px 20px;
+                background-color: #FF5A5F; /* Cor semelhante ao Airbnb */
+                color: white;
+                text-decoration: none;
+                border: 2px solid transparent; /* Borda padrão invisível */
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold; /* Texto em negrito */
+                transition: border-color 0.3s ease; /* Transição suave na cor da borda */
+            }
+    
+            .button.selected {
+                border-color: black; /* Borda preta quando selecionado */
+            }
+            .buttonm.selected {
+                border-color: black; /* Borda preta quando selecionado */
+            }
             
-            console.log('click krl');
-        }
-        btnv.onclick = function acaov(){
-            console.log("click buceta");
-        }
+
+    
+            .button:hover {
+                background-color: #FF3B3F; /* Cor ao passar o mouse */
+            }
+        </style>
+    </head>
+    <body>
+    
+    <h2>Favoritos dos Hóspedes</h2>
+    <div class="favorites-container">
+        <button class="button">Ver mais</button>
+        <button class="buttonm">Reservar agora</button>
+        <button class="button">Adicionar aos favoritos</button>
+    </div>
+    
+    <script>
+        const buttons = document.querySelectorAll('.button, .buttonm');
+    
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Alterna a classe 'selected' ao clicar
+                button.classList.toggle('selected');
+            });
+        });
     </script>
+    
+    </body>
+    </html>
+    ```
+    
+    ### Explicação do Código:
+    
+    - **HTML**: Cria uma estrutura com três botões dentro de um contêiner.
+    - **CSS**:
+      - A classe `.button` define o estilo dos botões, incluindo uma borda padrão invisível.
+      - A classe `.selected` muda a cor da borda para **preta** quando o botão é clicado.
+      - A transição suave na cor da borda é feita com `transition`.
+    - **JavaScript**:
+      - Adiciona um evento de clique a cada botão.
+      - Quando um botão é clicado, a classe `selected` é alternada, permitindo que vários botões sejam selecionados ao mesmo tempo.
+    
+    ### Dicas Adicionais:
+    - Você pode adicionar mais botões ou personalizar as cores e o texto conforme necessário.
+    - Se precisar de mais funcionalidades, como redirecionar para uma página específica, você pode adicionar mais lógica no JavaScript.
+    
+    Se precisar de mais ajuda ou tiver outras perguntas, é só avisar! 😊
+
+</body>
+</html>
+
+    
+    </body>
+    </html>
+    
+</html>
+
+    <script>
+        const voltarButton = document.querySelector('.button:first-child');
+const avancarButton = document.querySelector('.button:last-child');
+let currentStep = 1;
+const totalSteps = 3; // Número total de etapas
+
+voltarButton.addEventListener('click', () => {
+  if (currentStep > 1) {
+    currentStep--;
+    // Atualize o conteúdo da página para a etapa anterior
+    console.log("Etapa atual:", currentStep);
+  }
+});
+
+avancarButton.addEventListener('click', () => {
+  if (currentStep < totalSteps) {
+    currentStep++;
+    // Atualize o conteúdo da página para a próxima etapa
+    console.log("Etapa atual:", currentStep);
+  }
+});
+
+    </script>
+    </body>
+    </html>
+    
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-*{
+btn_espec*{
     margin: 0;
     padding: 0;
 }
@@ -12,6 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 15px 40px;
+    
 }
 .oculto{
     display: none;
@@ -24,8 +25,8 @@ main{
     flex-direction: column;
     padding: 25px 80px;
     gap: 15px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 75px;
+    margin-bottom: 75px;
   
 }
 main h2{
@@ -33,19 +34,29 @@ main h2{
     margin-bottom:30px ;
     
 }
+
 .name-of-ad{
     width: 415px;
     height: 40px;
     border-radius: 5px;
     border: solid 1px #ccc;
+    margin-bottom: 15px;
 }
 .name-of-ad-div ::placeholder{
     padding: 12px;
 }
-
+.n{
+    width: 415px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+}
+.n ::placeholder{
+    padding: 12px;
+}
 .content-1{
     display: flex;
-    gap: 15px;
+    
 }
 .content-1 ::placeholder{
     padding:12px;
@@ -53,30 +64,30 @@ main h2{
 }
 .content-2{
     display: flex;
-    gap: 15px;
+    
 }
 .content-2 ::placeholder{
     padding: 12px;
 }
 .content-3{
     display: flex;
-    gap: 15px;
+    flex-direction: column;
 }
 .content-3 ::placeholder{
     padding: 12px;
 }
-.content-input{
-    margin-top: 5px;
+.select_Option_Horarios{
+
 }
 .little{
-    width:80px;
+    width:150px;
     /* border-radius: 5px; */
     border: solid 1px #ccc;
     cursor: pointer;
 }
 .style-input{
     border: solid 1px #ccc;
-    width: 200px;
+    width: 208px;
     height: 40px;
     border-radius: 5px;
     transition: border 0.2s ease-in-out;
@@ -127,13 +138,37 @@ input:hover {
 }
 .btn_recursos:hover{
     border: solid 1px black;
+    transition:0.2s ;
+}
+.btn_espec{
+    border: solid 1px gray;
+    border-radius: 5px;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+}
+.btn_espec:hover{
+    border: solid 1px black;
+    transition:0.2s ;
 }
 
-.box-upload{
-    display: flex;
-    margin-top: 30px;
-    gap: 15px;
+.btn_recursos.selected {
+    border: solid 2px black;
 }
+.btn_espec.selected {
+    border: solid 2px black;
+}
+.btn_recursos.selected:hover {
+    border: solid 2px black;
+   }
+   
+   
 .upload-container {
     display: flex;
     align-items: center; 
@@ -144,12 +179,12 @@ input:hover {
     border-radius: 5px; 
     cursor: pointer; 
     overflow: hidden; 
-  }
-  .upload-container:hover{
+}
+.upload-container:hover{
     border: 1px solid #666;
-  }
-  
-  .upload-label {
+}
+
+.upload-label {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,59 +194,97 @@ input:hover {
     text-align: center;
     color: #333;
     cursor: pointer;
-  }
-  
-  .upload-label span {
+}
+
+.upload-label span {
     font-size: 16px;
     margin-bottom: 5px;
-  }
-  
- 
-  .fas.fa-upload {
+}
+
+
+.fas.fa-upload {
     font-size: 24px;
-  }
-  #upload-input {
+}
+#upload-input {
     display: none;
-  }
-  i{
+}
+i{
     color: #333;
-  }
-  footer{
+}
+.bot{
     display: flex;
     flex-direction: column;
     justify-content: end;
 }
 .teste{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    padding: 10px 30px;
+    justify-content: space-between;width: 100%;
+    padding: 15px 40px ;
     
 }
-.btn_v{
+.btn_back{
     border: none;
     outline: none;
 }
-.edit{
+.btn_advance{
     text-align: center;
-    background-color: #033aaf;
-    color: #ccc;
+    background-color:rgb(57, 89, 228);
+    color: white;
     border-radius: 5px;
     border: none;
-    height: 40px;
-    width: 100px;
+    height: 55px;
+    width: 200px;
 }
 
-    /* adicionei novas coisas a partir daqui👇 */
+/* adicionei novas coisas a partir daqui👇 */
 .section_2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.box-sala{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.section_4{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
+.content-4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+datas{
+  display: flex;
+  flex-direction: column;  
+  padding: 16px;
+}
+.input_datas{
+
+}
+.section_5{
+    display: flex;
+    flex-direction: column;
+    
+}
+.box-upload{
+    display: flex;
+    margin-top: 30px;
+    gap: 15px;
+}
 .little-2{
     width:220px;
-    
     border: solid 1px #ccc;
     cursor: pointer;
 }
