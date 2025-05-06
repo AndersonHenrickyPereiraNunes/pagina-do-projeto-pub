@@ -1,4 +1,4 @@
-btn_espec*{
+*{
     margin: 0;
     padding: 0;
 }
@@ -56,11 +56,9 @@ main h2{
 }
 .content-1{
     display: flex;
-    
 }
 .content-1 ::placeholder{
     padding:12px;
-    
 }
 .content-2{
     display: flex;
@@ -77,7 +75,10 @@ main h2{
     padding: 12px;
 }
 .select_Option_Horarios{
-
+    margin-top: 15px;
+}
+.valorAnuncioBox{
+    margin-top: 15px;
 }
 .little{
     width:150px;
@@ -100,14 +101,12 @@ input:hover {
 .submit{
     display: flex;
     justify-content: flex-start;
-    
     padding: 14px 32px;
     background-color: #033aaf;
     color: white;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-
 }
 .main-box-btns{
     display: flex;
@@ -123,7 +122,6 @@ input:hover {
     gap: 15px;
 }
 .btn_recursos{
-    
     border: solid 1px gray;
     border-radius: 5px;
     color: black;
@@ -216,16 +214,16 @@ i{
     flex-direction: column;
     justify-content: end;
 }
-.teste{
+.box_buttons {
     position: fixed;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%); /* Centraliza horizontalmente */
+    left: 0;
+    right: 0;
     display: flex;
-    justify-content: space-between;width: 100%;
-    padding: 15px 40px ;
-    
-}
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+  
 .btn_back{
     border: none;
     outline: none;
@@ -239,8 +237,6 @@ i{
     height: 55px;
     width: 200px;
 }
-
-/* adicionei novas coisas a partir daqui👇 */
 .section_2{
     display: flex;
     justify-content: center;
@@ -265,23 +261,36 @@ i{
     flex-direction: column;
     gap: 10px;
 }
-datas{
-  display: flex;
-  flex-direction: column;  
-  padding: 16px;
-}
-.input_datas{
 
-}
-.section_5{
+.box-data{
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+    gap: 10px;
+}
+
+.section_5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .box-upload{
     display: flex;
-    margin-top: 30px;
+   
+    margin-top: 40px;
     gap: 15px;
+}
+.text-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+textarea{
+    height: 150px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 .little-2{
     width:220px;
